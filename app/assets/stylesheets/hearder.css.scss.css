@@ -23,7 +23,11 @@ header {
 .nav .logo .icon {
 	width: 30px;
 	height: 50px;
-	margin-left: -38px;
+	margin-left: -35px;
+}
+
+.nav .logo .icon2 {
+	margin-left: -43px;
 }
 
 /*LOGO*/

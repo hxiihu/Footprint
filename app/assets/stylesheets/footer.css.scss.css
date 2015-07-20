@@ -1,0 +1,111 @@
+
+/*Universal Footer*/
+.footer {
+	background-color: black;
+	margin-top: 20px;
+	height: 230px;
+	border-bottom: 2.5px solid #C90832;
+}
+
+.footer .subtitle {
+	font-size: 16px;
+	color: #F6F6F6;
+	font-family: Tahoma, Lucida Grande, times, Tahoma;
+}
+
+/*about*/
+.footer .about {
+	margin-top: 20px;
+}
+
+.footer .about li {
+	list-style: none;
+	font-weight: normal;
+	font-family: Tahoma;
+	display: block;
+	font-size: 14px;	
+	color: #ccc;
+	padding-top: 3px;
+
+}
+
+.footer .about a {
+	text-decoration: none;
+	color: #bbb;
+}
+
+.footer .about a:hover {
+	font-size: 14.2px;
+	text-decoration: underline;
+}
+
+
+/*app*/
+.footer .app {
+	margin-top: 20px;
+}
+
+.footer .app li {
+	display: block;
+	list-style: none;
+	color: #bbb;
+}
+
+.footer .app li:first-child {
+	padding-top: 3px;
+}
+
+.footer .app li:nth-child(3) {
+	padding-top: 18px;
+}
+
+.footer .app li:last-child {
+	padding-top: 18px;
+}
+
+/*app pic*/
+.footer .app .apppic {
+	width: 18px;
+	height: 18px;
+	padding-right: -1px;
+}
+
+/*subscribe*/
+.footer .subscribe {
+	margin-top: 0px;
+}
+
+
+.footer .subscribe li{
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	padding-top: 3px;
+	padding-right: 3px;
+}
+
+.footer .subscribe .subapp {
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+
+.footer .name {
+	font-family: Tahoma, Lucida Grande, times, Tahoma;
+	font-size: 13px;
+	color: #bbb;
+	text-align: center;
+	padding-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

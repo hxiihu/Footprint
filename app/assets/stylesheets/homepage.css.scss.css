@@ -19,10 +19,9 @@ body {
 .jumbotron-1 .container-1 {
   position: relative;
   margin-top: 15px;
-  padding: 5px;
-  padding-bottom: 20px;
+  padding-top: 5px;
   text-align: center;
-  color: white;
+  color: #bbbcbc;
 }
 
 .jumbotron-1 .container-1 p {
@@ -31,22 +30,21 @@ body {
 
 .jumbotron-1 .container-2 {
   background-color: #9FE7F5;
-  font-family: Lucida Grande, times, Tahoma;
+  font-family: Tahoma, Lucida Grande, times, Tahoma;
   border-radius: 6px;
   width: 150px;
   height: 60px;
   margin: auto;
-  margin-top: 45px;
+  margin-top: 20px;
   text-transform: uppercase;
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 .jumbotron-1 .container-2:hover {
   opacity: 0.6;
-  text-shadow: 1px 1px;
 }
 
-.jumbotron-1 .container-2 .start {
+.jumbotron-1 .container-2 p {
     color: #EB3B75;
     padding-top: 20px;
     font-weight: bolder;
@@ -85,6 +83,7 @@ body {
 }
 
 .slider-dots li {
+  margin-top: 25px;
   color: #bbbcbc;
   display: inline;
   font-size: 30px;
@@ -95,5 +94,7 @@ body {
 .slider-nav {
   background-color: none;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 25px;
 }
+
+
