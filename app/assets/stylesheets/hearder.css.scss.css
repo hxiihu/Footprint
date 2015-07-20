@@ -17,6 +17,10 @@ header {
 	margin-left: -55px;
 }
 
+.logo a:hover {
+	text-decoration: none;
+}
+
 .logo a {
 	color: black;
 	font-weight: bolder;

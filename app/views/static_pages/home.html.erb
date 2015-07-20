@@ -2,12 +2,24 @@
 
 
 <div class="jumbotron-1">
-      <div class="container-1">
+    <div class="container-1">
         <h1>Find a world to live in.</h1>
-        <p> Not only when you look down, can you realise the path to the <em id="no-1">world</em>.</p>
+        <p> Not until you look down, could you notice the path to the <em id="no-1">world.</em>.</p>
+        <p> 当你低头的一瞬间，才发觉脚下的路<p>
         <div class = "container-2">
-        	<p class = "start">Start Journey</p>
+        	<p class = "start"><%= link_to "Start Journey", signup_path %></p>
         </div>
+    </div>
+</div>
 
-      </div>
-</div> 
+
+<div class = "slider-nav">
+	<%= link_to image_tag("left.png", class: "left-nav both-arrow"), "#"%> <!--Add an image with class-->
+	<ul class = "slider-dots">
+		<li class = "dot active-dot">&bull;</li> <!--Dots-->
+		<li class = "dot">&bull;</li>
+		<li class = "dot">&bull;</li>
+		<li class = "dot">&bull;</li>
+	</ul>
+	<%= link_to image_tag("right.png", class: "right-nav both-arrow"), "#" %>
+</div>

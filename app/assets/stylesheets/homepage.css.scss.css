@@ -31,6 +31,7 @@ body {
 
 .jumbotron-1 .container-2 {
   background-color: #9FE7F5;
+  font-family: Lucida Grande, times, Tahoma;
   border-radius: 6px;
   width: 150px;
   height: 60px;
@@ -46,13 +47,53 @@ body {
 }
 
 .jumbotron-1 .container-2 .start {
-    font-family: Lucida Grande, times, Tahoma;
     color: #EB3B75;
     padding-top: 20px;
     font-weight: bolder;
 }
 
 
+/* Slider Dots and Array*/
+.both-arrow {
+  height: 30px;
+  width: 30px;
+}
 
+.left-nav {
+  display: inline-block;
+  margin-top: 9px;
+  vertical-align: top;
+  margin-right: 45px;
+}
 
+.right-nav {
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 9px;
+  vertical-align: top;
+}
 
+.slider-dots {
+  list-style: none; /* get rid of the final little dot */
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li.active-dot {
+  color: #5a5a5a;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.slider-nav {
+  background-color: none;
+  text-align: center;
+  margin-top: 5px;
+}
