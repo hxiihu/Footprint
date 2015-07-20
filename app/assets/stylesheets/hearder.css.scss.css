@@ -70,6 +70,7 @@ header {
 .nav nav .dropdown-menu > li a:hover {
 	background-color: #EDF5F3;
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 
