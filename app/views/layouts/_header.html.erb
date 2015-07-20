@@ -1,12 +1,13 @@
 	<header class="nav">
 		<div class = "container">
 			<div class = "logo">
-				<ul class = "pull-left">
+				<ul class = "col-xs-3">
 					<li><%= link_to "Footprint", root_path %></li>
 				</ul>
+				<ul class = "col-xs-5"><%= link_to image_tag("icon.png", class: "icon"), root_path %></ul>
 			</div>
 			<nav>
-				<ul class = "pull-right">
+				<ul class = "col-xs-4">
 					<div class = "nav-right-text">
 						<li><%= link_to "Sign Up",   signup_path %></li>
 						<li><%= link_to "Log In",   login_path %></li>
