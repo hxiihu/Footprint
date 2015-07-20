@@ -1,13 +1,15 @@
+
 	<header class="nav">
 		<div class = "container">
 			<div class = "logo">
-				<ul class = "col-xs-3">
+				<ul class = "pull-left">
 					<li><%= link_to "Footprint", root_path %></li>
 				</ul>
-				<ul class = "col-xs-5"><%= link_to image_tag("icon.png", class: "icon"), root_path %></ul>
+				<ul class = "pull-left"><%= link_to image_tag("icon.png", class: "icon"), root_path %></ul>
 			</div>
+			<!--This is supposed to be a search box-->
 			<nav>
-				<ul class = "col-xs-4">
+				<ul class = "pull-right">
 					<div class = "nav-right-text">
 						<li><%= link_to "Sign Up",   signup_path %></li>
 						<li><%= link_to "Log In",   login_path %></li>
