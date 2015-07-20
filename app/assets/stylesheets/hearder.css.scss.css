@@ -5,9 +5,18 @@
 /* Universal -- Navigation Bar */
 
 /*HEAD*/
+.nav {
+	border-bottom: 1px solid #ddd;
+	height: 55px;
+}
+
+.nav li {
+  display: inline;
+}
+
 header {
     background-color: #efefef;
-    }
+}
 
 /*LOGO*/
 .logo{
@@ -19,6 +28,7 @@ header {
 
 .logo a:hover {
 	text-decoration: none;
+	font-size: 40.5px;
 }
 
 .logo a {
@@ -27,11 +37,6 @@ header {
 }
 
 /*Right Part Nav Bar*/
-.nav {
-	border-bottom: 1px solid #ddd;
-	height: 55px;
-}
-
 .nav nav ul a {
   color: #5a5a5a;
   font-size: 11.5px;
@@ -42,16 +47,37 @@ header {
 
 .nav nav ul .nav-right-text {
 	margin-top: 18.5px;
-	margin-right: -20px;
+	margin-right: 2px;
 }
 
-.nav nav ul .help {
-	display: none;
+/* Dropdown menu */
+.nav nav .dropdown-menu {
+	display: none; /*show first*/
+	background-color: #efefef;
+	margin-top: 15px;
+	margin-right: 12px;
+	min-width: 105px;  /*width of the menu*/
 }
 
-.nav li {
-  display: inline;
+.nav nav .dropdown-menu > li a {
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: -3px;
+	padding-top: 15px;
+	text-align: center;
 }
 
-/* Stylesheets for Homepage */
+.nav nav .dropdown-menu > li a:hover {
+	background-color: #EDF5F3;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
 
