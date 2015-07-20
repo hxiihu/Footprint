@@ -1,0 +1,19 @@
+body {
+	background-color: #F4F4F4;
+}
+
+.jumbotron {
+  background-image: url("./2.JPG");
+  height: 600px;
+  background-repeat:repeat;
+  background-size: cover, cover;
+  margin-top: 2px;
+  float: none;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 25px;
+  text-align: right;
+  color: white;
+}
