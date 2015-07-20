@@ -1,0 +1,55 @@
+/* Import Bootrap */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Universal -- Navigation Bar */
+
+/*HEAD*/
+header {
+    background-color: #efefef;
+    }
+
+/*LOGO*/
+.logo{
+	font-size: 26px;
+	padding-top: 8px;
+	margin-left: -35px;
+	padding-bottom: 0px;
+}
+
+.logo a {
+	color: black;
+	font-weight: bolder;
+	border-bottom: 2px dashed white;
+}
+
+/*Right Part Nav Bar*/
+.nav {
+	border-bottom: 2px solid #ddd;
+}
+
+.nav nav ul a {
+  color: #5a5a5a;
+  font-size: 11.5px;
+  font-weight: bold;
+  padding: 20px 10px 2px;
+  text-transform: uppercase;
+}
+
+.nav nav ul .nav-right-text {
+	margin-top: 9px;
+	margin-right: -20px;
+}
+
+.nav nav ul .help {
+	display: none;
+}
+
+.nav li {
+  display: inline;
+}
+
+
+
+/* Stylesheets for Homepage */
+
