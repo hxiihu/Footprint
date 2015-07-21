@@ -8,11 +8,11 @@ Rails.application.routes.draw do
 
   get   'feedback'    =>  'static_pages#feedback'
 
-  get   'login'       =>  'static_pages#login'
-
-  get   'signup'      =>  'static_pages#signup'
-
   get   'explore'     =>  'static_pages#explore'
+
+  get   'signup'      =>  'users#signup'
+
+  get  'login'        =>  'users#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
