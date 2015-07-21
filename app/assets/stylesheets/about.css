@@ -30,6 +30,15 @@
 	color: black;
 }
 
+/*Youtube Videos*/
+.aboutpage .container iframe{
+	position: relative;
+	float: none;
+	margin-top: 20px;
+	margin-left: 140px;
+	margin-bottom: 20px;
+}
+
 /*para*/
 .aboutpage p {
 	font-family: Lucida Grande;
