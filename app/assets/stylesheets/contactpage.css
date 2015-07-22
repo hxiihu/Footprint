@@ -1,6 +1,6 @@
 
 .contact .yurilliamprofile {
-	background-image: image-url("hz.png");
+	background-image: url('hz.png');
 	height: 300px;
 	background-repeat: no-repeat;
 	float: none;
