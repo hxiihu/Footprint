@@ -1,7 +1,8 @@
 
 /*bck image*/
 .aboutpage .about{
-	background-image: url("orbit.png");
+
+	background-image: url(asset-path('orbit.png'))
 	height: 300px;
 	background-repeat: no-repeat;
 	float: none;
@@ -37,6 +38,7 @@
 	margin-top: 20px;
 	margin-left: 140px;
 	margin-bottom: 20px;
+	border-radius: 8px;
 }
 
 /*para*/
