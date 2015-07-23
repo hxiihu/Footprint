@@ -2,7 +2,7 @@
 /*bck image*/
 .aboutpage .about{
 
-	background: image-url('orbit.png')
+	background: url('orbit.png');
 	height: 300px;
 	background-repeat: no-repeat;
 	float: none;
