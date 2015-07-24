@@ -1,33 +1,33 @@
 <% provide(:title, 'Sign Up') %>
 
 <div class = "signuppage">
-<div class = "container">
-<h2 class = "signuptext">Sign Up</h2>
+ <div class = "container">
+ <h2 class = "signuptext">Sign Up</h2>
 
-<div class="row">
+  <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
       <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.text_field :name, class: 'form-control', :placeholder => "e.g., Hu Xi"  %>
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <%= f.email_field :email, class: 'form-control', :placeholder => "e.g., yurilliam@footprint.com" %>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.password_field :password, class: 'form-control', :placeholder => "e.g., I'm Hand50m3" %>
 
       <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.password_field :password_confirmation, class: 'form-control', :placeholder => "e.g., I'm Hand50m3"%>
 
       <%= f.submit "Submit", class: "btn btn-primary submittext" %>
     <% end %>
 
      <div class = "loginnewuser"><p>Have an account? <%= link_to " Log in!", login_path %></p></div>
   </div>
-</div>
-</div>
+  </div>
+ </div>
 </div>
 
 <!-- Equivalent HTML5 File Generated -->
