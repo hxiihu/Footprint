@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save # .save method returns true/false upon the success/failure of writing to database
+      log_in @user
       flash[:success] = "当你低头的一瞬间，才发觉脚下的路。亲爱的，Welcome to Footprint!"
       redirect_to user_url(@user) # Handle a successful save.
     else
