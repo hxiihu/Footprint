@@ -128,6 +128,23 @@ input {
   text-align: right;
   padding-top: 8px;
 }
+
+/* Checkbox */
+.signuppage .container .checkbox {
+  text-align: right;  
+}
+
+.signuppage .container .checkbox span {
+  margin-left: 20px;
+  font-family: Tahoma;
+  font-weight: normal;
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 /* Log In paeg ends here */
 
 
