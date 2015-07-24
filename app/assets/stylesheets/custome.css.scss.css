@@ -68,6 +68,7 @@ aside {
 /* forms */
 .signuppage .container {
 	width: 850px;
+  margin-bottom: 107px;
 }
 
 .signuppage .container .signuptext{
@@ -125,7 +126,7 @@ input {
 .signuppage .container .loginnewuser {
   font-family: Tahoma;
   text-align: right;
-  margin-bottom: 99px;
+  padding-top: 8px;
 }
 /* Log In paeg ends here */
 
