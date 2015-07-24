@@ -80,7 +80,7 @@ aside {
 
 .signuppage .container .submittext{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: -2px;
 	margin-left: 140px;
 	width: 150px;
 	font-family: Tahoma;
@@ -118,3 +118,17 @@ input {
 }
 /* Error Display Ends Here */
 /* Sign Up Page End Here */
+
+
+/* Log In Page*/
+/* Log In page mostly inherits from Sign Up Page */
+.signuppage .container .loginnewuser {
+  font-family: Tahoma;
+  text-align: right;
+  margin-bottom: 99px;
+}
+/* Log In paeg ends here */
+
+
+
+
