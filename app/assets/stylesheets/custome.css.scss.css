@@ -56,7 +56,7 @@ aside {
 
 .gravatar {
   float: left;
-  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .gravatar_edit {
@@ -168,22 +168,22 @@ input {
 /* Profile Update Page Ends Here /
 
 /* All users Index */
-.signuppage .container .users {
-  list-style: none;
-  margin: 0;
-}
-
-.signuppage .container .users li {
-    overflow: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
-    font-size: 1.4em;
-    text-align: left;
-}
-
-.signuppage .container .users a:link{
-  color: black;
+.signuppage .container .textbelow {
+  text-align: center;
   font-family: Tahoma;
+  font-size: 15px;
 }
 
+.signuppage .container .allusers .oneuser{
+  list-style: none;
+  display: inline-block;
+  margin-right: 66px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+}
 
+.signuppage .container .allusers .onesure .oneusername p{
+  font-family: Tahoma;
+  text-decoration: none;
+}

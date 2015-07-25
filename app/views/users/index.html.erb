@@ -1,16 +1,20 @@
 <% provide(:title, 'All Users') %>
+
 <div class = "signuppage">
- <div class = "container">
-	<h2 class = "signuptext">All users</h2>
+	<div class = "container">
+		<h2 class = "signuptext">All Users</h2>
+		<p class = "textbelow"> *All users' indices. Just for infomation. Each user have only access to his/her own profile page.</p>
 
-	<ul class="users">
-  		<% @users.each do |u| %>
-    	<li>
-    	<%=  gravatar_for u, size: 50 %>    		
-      	<%=  link_to u.name, u %>
-    	</li>
-  		<% end %>
-	</ul>
+		<%= will_paginate %>
+		<ul class="allusers">
+			<% @users.each do |u| %>
+			<div class = "oneuser">
+				<div class = "pic"><li><%=  gravatar_for u, size: 50 %></li></div>    		
+				<div class = "oneusername"><li><p><%=  u.name %></p></li></div>
+			</div>
+			<% end %>
+		</ul>
+		<%= will_paginate %>
 
- </div>
+	</div>
 </div>
