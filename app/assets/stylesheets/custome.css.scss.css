@@ -167,4 +167,23 @@ input {
 }
 /* Profile Update Page Ends Here /
 
+/* All users Index */
+.signuppage .container .users {
+  list-style: none;
+  margin: 0;
+}
+
+.signuppage .container .users li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.signuppage .container .users a:link{
+  color: black;
+  font-family: Tahoma;
+}
+
 

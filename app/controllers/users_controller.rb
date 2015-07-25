@@ -1,11 +1,15 @@
 class UsersController < ApplicationController
   #Log in to have access
   #Profile is only accessble to user himself
-  before_action :logged_in_user, only: [:edit, :update, :show]
+  before_action :logged_in_user, only: [:edit, :update, :show, :index]
    before_action :correct_user,   only: [:edit, :update, :show]
 
   def signup
   	 @user = User.new
+  end
+
+  def index
+    @users = User.all
   end
 
   def show
