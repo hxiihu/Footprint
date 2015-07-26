@@ -10,6 +10,10 @@
 	border-bottom: 2.5px solid #C90832;
 }
 
+.footer .container .insidecontainer{
+	height: 180px;
+}
+
 .footer .subtitle {
 	font-size: 16px;
 	color: #F6F6F6;
@@ -26,7 +30,6 @@
 	font-weight: normal;
 	font-family: Tahoma;
 	display: block;
-	font-size: 13px;	
 	color: #ccc;
 	padding-top: 3px;
 
@@ -78,38 +81,25 @@
 	margin-top: 0px;
 }
 
-
-.footer .subscribe li{
-	position: relative;
-	display: inline-block;
-	list-style: none;
-	padding-top: 3px;
-	padding-right: 3px;
-}
-
 .footer .subscribe .subapp {
 	width: 18px;
 	height: 18px;
-	opacity: 0.8;
 }
 
-.footer .name {
-	font-family: Tahoma, Lucida Grande, times, Tahoma;
-	font-size: 12px;
+.footer .subscribe li{
+	position: relative;
+	display: block;
+	list-style: none;
+	padding-top: 5px;
+	margin-left: 25px;
+}
+
+.footer .copyright {
+	position: relative;
+	clear: both;
 	color: #bbb;
 	text-align: center;
-	padding-top: 6px;
 }
-
-.footer .name a:link {
-	color: #bbb;
-}
-
-.footer .name a:hover {
-	text-decoration: underline;
-	font-size: 13px;
-}
-
 
 
 

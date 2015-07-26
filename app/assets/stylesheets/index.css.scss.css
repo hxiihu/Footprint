@@ -1,0 +1,20 @@
+/* All users Index */
+.signuppage .container .textbelow {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 15px;
+}
+
+.signuppage .container .allusers .oneuser{
+  list-style: none;
+  display: inline-block;
+  margin-right: 70px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.signuppage .container .allusers .onesure .oneusername p{
+  font-family: Tahoma;
+  text-decoration: none;
+}

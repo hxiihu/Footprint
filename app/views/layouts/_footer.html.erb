@@ -2,15 +2,16 @@
 
 <div class = "footer">
 	<div class = "container">
+	<div class = "insidecontainer">
 		<div class = "about col-xs-4">
 			<ul><p class = "subtitle">ABOUT</p>
-				<li><a href = "./about">Footprint</a></li>
 				<li><a href = "http://orbital.comp.nus.edu.sg" target = "_blank">Orbital</a></li>
 				<li><a href = "http://www.github.com/xiihu/footprint" target = "_blank">API</a></li>
 				<li><a href = "./contact">Contact</a></li>
 				<li><a href = "./feedback">Feedback</a></li>
 			</ul>
 		</div>
+
 		<div class = "app col-xs-4">
 			<ul><p class = "subtitle">APP</p>
 				<li ><%= link_to image_tag("iphone.png", class: "apppic"), "https://www.apple.com"  %> for iPhone</li>
@@ -18,16 +19,17 @@
 				<li ><%= link_to image_tag("windows.png", class: "apppic"), "https://www.windowsphone.com" %> for Windows Phone</li>
 			</ul>
 		</div>.
+
 		<div class = "subscribe col-xs-4">
 			<ul><p class = "subtitle">SUBSCRIBE</p>
 				<li ><%= link_to image_tag("github.png", class: "subapp"), "https://www.github.com/xiihu/footprint" %></li>
 				<li ><%= link_to image_tag("fb.png", class: "subapp"), "http://www.facebook.com/yurilliam" %></li>
-				<li ><%= image_tag("twitter.png", class: "subapp") %></li>
 				<li ><%= image_tag("ins.png", class: "subapp") %></li>
-				<li ><%= image_tag("linkedin.png", class: "subapp") %></li>
+				<li ><%= link_to image_tag("linkedin.png", class: "subapp"), "https://www.linkedin.com/in/huxixihu" %></li>
 			</ul>
-			<div class = "name"><p>© 2015 <a href = "http://www.facebook.com/yurilliam" target = "_blank">Yurilliam</a><p>
-			</div>
 		</div>
+
+	</div>
+		<div class = "copyright"><p> © 2015 Orbital NUS | Yurilliam</p></div>
 	</div>
 </div>
