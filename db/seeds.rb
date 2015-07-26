@@ -13,3 +13,20 @@ User.create!(name:  "Hu Xi",
              admin: true, 
              activated: true,
              activated_at: Time.zone.now)
+
+User.create!(name:  "Zhou You",
+             email: "yollyhideout@gmai.com",
+             password:              "zhouyou",
+             password_confirmation: "zhouyou",
+             admin: true, 
+             activated: true,
+             activated_at: Time.zone.now)
+
+
+User.create!(name:  "Footprint",
+             email: "yurilliam@footprint.com",
+             password:              "Hangzhou",
+             password_confirmation: "Hangzhou!",
+             admin: true, 
+             activated: true,
+             activated_at: Time.zone.now)
