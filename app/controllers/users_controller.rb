@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
   #Log in to have access
   #Profile is only accessble to user himself
-  before_action :logged_in_user, only: [:edit, :update, :show, :index]
-   before_action :correct_user,   only: [:edit, :update, :show]
+  before_action :logged_in_user, only: [:edit, :update, :show, :index, :destroy]
+  before_action :correct_user,   only: [:edit, :update, :show]
+  before_action :admin_user,     only: :destroy #only Admin can delete a user
 
   def signup
   	 @user = User.new
@@ -45,6 +46,14 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "User Deleted"
+    redirect_to users_url
+  end
+
+
    private	#private method
  	def user_params
     	params.require(:user).permit(:name, :email, :password, :password_confirmation)
@@ -65,6 +74,11 @@ class UsersController < ApplicationController
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
+    end
+
+    # Confirms an admin user.
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
     end
 
 end

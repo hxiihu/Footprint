@@ -10,7 +10,15 @@
 			<% @users.each do |u| %>
 			<div class = "oneuser">
 				<div class = "pic"><li><%=  gravatar_for u, size: 50 %></li></div>    		
-				<div class = "oneusername"><li><p><%=  u.name %></p></li></div>
+				<div class = "oneusername"><li><p><%=  u.name %>
+				<!--Delete a user, which only applies to Admin!-->
+				<% if current_user.admin? && !current_user?(u) %>
+					| <%= link_to "x", u, method: :delete, data: { confirm: "Sure?" } %>
+                <% end %>
+
+				</p></li></div>
+
+
 			</div>
 			<% end %>
 		</ul>
