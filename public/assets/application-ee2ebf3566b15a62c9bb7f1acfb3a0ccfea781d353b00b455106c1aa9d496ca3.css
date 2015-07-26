@@ -1,0 +1,600 @@
+/*bck image*/
+.aboutpage .about {
+  background: url(/assets/orbit-978206598084f1bb5c06254091f223587c0a99443a9c4fb0f896762089a6dfce.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  float: none;
+  opacity: 0.8;
+  margin-top: 2px; }
+
+.aboutpage .container {
+  width: 850px;
+  float: none; }
+
+/*about text*/
+.aboutpage .container .abouttext {
+  text-align: center;
+  font-family: Lucida Grande, Tahoma;
+  border-bottom: 2px solid #ddd;
+  font-weight: bolder; }
+
+/*subtitle*/
+.aboutpage .container .subtitle {
+  text-align: left;
+  font-family: Lucida Grande;
+  font-weight: normal;
+  color: black; }
+
+/*Youtube Videos*/
+.aboutpage .container iframe {
+  position: relative;
+  float: none;
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  border-radius: 8px; }
+
+/*para*/
+.aboutpage p {
+  font-family: Lucida Grande;
+  padding-left: 2px;
+  text-align: justify;
+  color: #454A47, #3B3D3C; }
+
+.aboutpage a:link {
+  color: black;
+  text-decoration: none;
+  background-color: transparent; }
+
+.aboutpage a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: black; }
+
+.aboutpage a:visited {
+  color: black;
+  text-decoration: none;
+  background-color: transparent; }
+
+.aboutpage a:active {
+  color: black;
+  text-decoration: none;
+  background-color: transparent; }
+.contact .yurilliamprofile {
+  background: url(/assets/hz-eb2617f916d8e81abce43ba0d7c5870d008efb20420e596be1fd143bb5175afd.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  float: none;
+  opacity: 0.85;
+  margin-top: 2px; }
+
+.contact .container {
+  width: 850px;
+  float: none; }
+
+.contact .container .contacttext {
+  position: relative;
+  text-align: center;
+  font-family: Tahoma;
+  font-weight: bolder;
+  border-bottom: 2px solid #ddd; }
+
+.contact .container .message {
+  font-family: Tahoma;
+  color: #454A47, #3B3D3C;
+  padding-top: 25px;
+  font-size: 15px; }
+
+.contact .container li {
+  display: block;
+  position: relative; }
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*header*/
+/*footer*/
+
+/* mixins, variables, etc. */
+/* Debug Environment */
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+
+/* Profile Page*/
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  border-radius: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+/* Profile Page End Here */
+
+/* Sign Up Page */
+/* forms */
+.signuppage .container {
+	width: 850px;
+  margin-bottom: 107px;
+}
+
+.signuppage .container .signuptext{
+	font-family: Lucida Grande;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.signuppage .container .submittext{
+	margin-top: 20px;
+	margin-bottom: -2px;
+	margin-left: 140px;
+	width: 150px;
+	font-family: Tahoma;
+	font-weight: normal;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+/* Error Control */
+#error_explanation {
+  color: #C90832;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+    font-family: Tahoma;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+/* Error Display Ends Here */
+/* Sign Up Page End Here */
+
+
+/* Log In Page*/
+/* Log In page mostly inherits from Sign Up Page */
+.signuppage .container .loginnewuser {
+  font-family: Tahoma;
+  text-align: right;
+  padding-top: 8px;
+}
+
+/* Checkbox */
+.signuppage .container .checkbox {
+  text-align: right;  
+}
+
+.signuppage .container .checkbox span {
+  margin-left: 20px;
+  font-family: Tahoma;
+  font-weight: normal;
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+/* Log In paeg ends here */
+
+/* Profile Update Page */
+/* Gravatar */
+.signuppage .container .gravataredit {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 80px;
+}
+
+.signuppage .container .gravataredit .gravataredittext {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 16px;
+  font-family: Tahoma;
+  font-weight: normal;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+/* Profile Update Page Ends Here /
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/*Universal Footer*/
+.footer {
+	background-color: black;
+	margin-top: 20px;
+	height: 230px;
+	border-bottom: 2.5px solid #C90832;
+}
+
+.footer .container .insidecontainer{
+	height: 180px;
+}
+
+.footer .subtitle {
+	font-size: 16px;
+	color: #F6F6F6;
+	font-family: Tahoma, Lucida Grande, times, Tahoma;
+}
+
+/*about*/
+.footer .about {
+	margin-top: 20px;
+}
+
+.footer .about li {
+	list-style: none;
+	font-weight: normal;
+	font-family: Tahoma;
+	display: block;
+	color: #ccc;
+	padding-top: 3px;
+
+}
+
+.footer .about a {
+	text-decoration: none;
+	color: #bbb;
+}
+
+.footer .about a:hover {
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+
+/*app*/
+.footer .app {
+	margin-top: 20px;
+}
+
+.footer .app li {
+	display: block;
+	list-style: none;
+	color: #bbb;
+}
+
+.footer .app li:first-child {
+	padding-top: 3px;
+}
+
+.footer .app li:nth-child(3) {
+	padding-top: 18px;
+}
+
+.footer .app li:last-child {
+	padding-top: 18px;
+}
+
+/*app pic*/
+.footer .app .apppic {
+	width: 18px;
+	height: 18px;
+	padding-right: -1px;
+}
+
+/*subscribe*/
+.footer .subscribe {
+	margin-top: 0px;
+}
+
+.footer .subscribe .subapp {
+	width: 18px;
+	height: 18px;
+}
+
+.footer .subscribe li{
+	position: relative;
+	display: block;
+	list-style: none;
+	padding-top: 5px;
+	margin-left: 25px;
+}
+
+.footer .copyright {
+	position: relative;
+	clear: both;
+	color: #bbb;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Universal -- Navigation Bar */
+
+/*HEAD*/
+
+.nav {
+	border-bottom: 1px solid #ddd;
+	border-top: 2.5px solid #C90832;
+	height: 55px;
+}
+
+.nav li {
+  display: inline;
+}
+
+header {
+    background-color: #efefef;
+}
+
+/*Icon*/
+.nav .logo .icon {
+	width: 30px;
+	height: 50px;
+	margin-left: -35px;
+}
+
+.nav .logo .icon2 {
+	margin-left: -43px;
+}
+
+/*LOGO*/
+.logo{
+	font-family: cookie;
+	font-size: 40px;
+	padding-top: 0px;
+	margin-left: -55px;
+}
+
+.logo a:hover {
+	text-decoration: none;
+	font-size: 40.5px;
+}
+
+.logo a {
+	color: black;
+	font-weight: bolder;
+}
+
+/*Right Part Nav Bar*/
+.nav nav ul a {
+  color: black;
+  font-size: 11.5px;
+  font-weight: bold;
+  padding: 20px 10px 2px;
+  text-transform: uppercase;
+}
+
+.nav nav ul .nav-right-text {
+	margin-top: 18.5px;
+	margin-right: 2px;
+}
+
+/* Dropdown menu */
+.nav nav .dropdown-menu {
+	display: none; /*show first*/
+	background-color: #efefef;
+	margin-top: 15px;
+	margin-right: 12px;
+	min-width: 105px;  /*width of the menu*/
+}
+
+.nav nav .dropdown-menu > li a {
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: -3px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.nav nav .dropdown-menu > li a:hover {
+	background-color: #EDF5F3;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #F4F4F4; }
+
+.jumbotron-1 {
+  background: url(/assets/9-9d8d7473e168517370ac223b1c8ed33b64753040b5d9c798088f49b1d6656ac6.png);
+  height: 600px;
+  width: 1280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -12px;
+  margin-left: -70px;
+  float: left;
+  border-bottom: 2px solid #ddd; }
+
+.jumbotron-1 .container-1 {
+  position: relative;
+  margin-top: 15px;
+  padding-top: 5px;
+  text-align: center;
+  color: #bbbcbc; }
+
+.jumbotron-1 .container-1 p {
+  font-size: 15px; }
+
+.jumbotron-1 .container-2 {
+  background-color: #9FE7F5;
+  font-family: Tahoma, Lucida Grande, times, Tahoma;
+  border-radius: 6px;
+  width: 120px;
+  height: 50px;
+  margin: auto;
+  margin-top: 400px;
+  text-transform: uppercase;
+  opacity: 0.5; }
+
+.jumbotron-1 .container-2:hover {
+  opacity: 0.7; }
+
+.jumbotron-1 .container-2 p {
+  padding-top: 16px;
+  font-weight: bolder; }
+
+.jumbotron-1 .container-2 a:hover {
+  text-decoration: none; }
+
+/* Slider Dots and Array*/
+.both-arrow {
+  height: 30px;
+  width: 30px; }
+
+.left-nav {
+  display: inline-block;
+  margin-top: 9px;
+  vertical-align: top;
+  margin-right: 45px; }
+
+.right-nav {
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 9px;
+  vertical-align: top; }
+
+.slider-dots {
+  list-style: none;
+  /* get rid of the final little dot */
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.slider-dots li.active-dot {
+  color: #5a5a5a; }
+
+.slider-dots li {
+  margin-top: 25px;
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+.slider-nav {
+  background-color: none;
+  text-align: center;
+  margin-top: 25px; }
+/* All users Index */
+
+.signuppage .container .textbelow {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 15px;
+}
+
+.signuppage .container .allusers .oneuser{
+  list-style: none;
+  display: inline-block;
+  margin-right: 70px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.signuppage .container .allusers .onesure .oneusername p{
+  font-family: Tahoma;
+  text-decoration: none;
+}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
