@@ -26,7 +26,7 @@ User.create!(name:  "Zhou You",
 User.create!(name:  "Footprint",
              email: "yurilliam@footprint.com",
              password:              "Hangzhou",
-             password_confirmation: "Hangzhou!",
+             password_confirmation: "Hangzhou",
              admin: true, 
              activated: true,
              activated_at: Time.zone.now)

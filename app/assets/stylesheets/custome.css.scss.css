@@ -62,6 +62,13 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
+
+/* Deal as an exception */
+.adminprofile {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
 /* Profile Page End Here */
 
 /* Sign Up Page */

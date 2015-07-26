@@ -1,10 +1,82 @@
-<h1>Footprint</h1>
+<!DOCTYPE html>
+<html>
 
-<p>Hi <%= @user.name %>,</p>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<style>
+	.email .container {
+		background-color: #F4F4F4;
+	}
+	.email .container .emailheader{
+		text-align: center;
+		font-family: cookie;
+		background-color: black;
+		border-bottom: 2px solid #C90832;
+		color: white;
+		font-size: 16px;
+		height: 28px;
+	}
 
-<p>
-Welcome to the Sample App! Click on the link below to activate your account:
-</p>
+	.email .container p {
+		font-family: Tahoma;
+		font-size: 15px;
+	}
 
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
-                                                    email: @user.email) %>
+	.email .container .instruction li {
+		list-style: circle;
+		font-size: 14px
+	}
+
+	.email .container li {
+		list-style: none;
+	}
+
+	.email .container .actlink:hover {
+		opacity: 0.8;
+	}
+
+	.email .container a:link {
+		text-decoration: none;
+		color: #C90832;
+	}
+
+	.email .container a:hover {
+		text-decoration: underline;
+	}
+	</style>
+</head>
+
+<body>
+<div class = "email">
+	<div class = "container">
+		<div class = "emailheader"><h2 class = "emailtitle">Footprint</h2></div>
+
+		<p>Hi <%= @user.name %>,</p>
+		<p>Welcome to Footprint!</p>
+		<p>"You will never be completely at home again, because part of your heart will always be elsewhere."</p>
+		<p> Before your click on "Activate", there are several warm notes : </p>
+		<p>In order to provide a more user-friendly service, these are several instructions on how to change your profile picture:</p>
+		<ul class = "instruction">
+			<li>After the click on "Activate my account", go to Account/Settings</li>
+			<li>Click "change" below the defualt picture (Sorry I have no control over the default picture). </li>
+			<li>Redicted to a page called "Gravatars", which is a sub-website of WordPress.com.</li>
+			<li>Log in with your WordPress account. If you don't have, create one with current email address.</li>
+			<li>Click "Add email address" to add your Footprint account email address</li>
+			<li>Gravatars will send you an email to verify your email address. Click the link inside the verifying email.</li>
+			<li>You are now able to upload your profile image by clicking "Add a new image"</li>
+			<li>Follow the lateron instructions.</li>
+			<li>Back to and refresh your Footprint profile page</li>
+		</ul>
+		<p>I sincerely apologize for inconvenience caused. Because we don't have a huge database, we have to rely on Gravatar's service. Thanks for your understanding. Hope you enjoy the journey with Footprint!</p>
+		<p> Finally, kindly click on the link below to activate your account:</p>
+		<%= link_to "Activate Account", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+		<p>Or copy and paste in your browser, <%= edit_account_activation_url(@user.activation_token, email: @user.email) %></p>
+		<p> Hope you Happy Travelling! </p>
+
+		<li>Lovely,</li>
+		<li>Hu Xi</li>
+		<li>Co-founder, Footprint</li>
+	</div>
+</div>
+</body>
+</html>
