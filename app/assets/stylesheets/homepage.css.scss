@@ -3,54 +3,61 @@ body {
 	background-color: #F4F4F4;
 }
 
-.jumbotron-1 {
-  
+.slider  .slide-1{
   background: image-url('9.png');
   height: 600px; 
-  width: 1280px;
+  width: 1288px;
   background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
+  margin-left: -74px;
   margin-top: -12px;
-  margin-left: -70px;
   float: left;
   border-bottom: 2px solid #ddd;
-}
-
-.jumbotron-1 .container-1 {
-  position: relative;
-  margin-top: 15px;
-  padding-top: 5px;
   text-align: center;
   color: #bbbcbc;
-}
-
-.jumbotron-1 .container-1 p {
   font-size: 15px;
+  padding-top: 60px;
 }
 
-.jumbotron-1 .container-2 {
+.slider .slide-1 .container-2 {
   background-color: #9FE7F5;
   font-family: Tahoma, Lucida Grande, times, Tahoma;
   border-radius: 6px;
   width: 120px;
   height: 50px;
   margin: auto;
-  margin-top: 400px;
+  margin-top: 350px;
   text-transform: uppercase;
   opacity: 0.5;
 }
 
-.jumbotron-1 .container-2:hover {
+.slider .slide-1 .container-2:hover {
   opacity: 0.7;
 }
 
-.jumbotron-1 .container-2 p {
+.slider .slide-1 .container-2 p {
     padding-top: 16px;
     font-weight: bolder;
 }
 
-.jumbotron-1 .container-2 a:hover {
+.slider .slide-1 .container-2 a:hover {
   text-decoration: none;
+}
+
+.slider .slide-2 {
+  position: relative;
+  display: none;
+}
+
+.slider .slide-2 .container {
+  float: right;
+  margin-top: -10px;
+  background-color: black;
+}
+
+.slider .active-slide {
+    display: block;
 }
 
 /* Slider Dots and Array*/
