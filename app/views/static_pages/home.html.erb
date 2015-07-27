@@ -3,20 +3,62 @@
 
 <div class="slider">
 
-
-    <div class="slide-1 active-slide">
+    <div class="slide active-slide">
+    	<div class = "slide-1">
     	<div class = "container">
-        <h1>Find a world to live in.</h1>
-        <p> 当你低头的一瞬间，才发觉脚下的路<p>
-        <div class = "container-2">
-        	<p class = "start"><%= link_to "Sign Up", signup_path %></p>
-        </div>
+    		<div class = "row">
+    			<h1>Find a world to live in.</h1>
+        		<p> 当你低头的一瞬间，才发觉脚下的路<p>
+        		<div class = "container-2">
+        			<p class = "start"><%= link_to "Sign Up", signup_path %></p>
+        		</div>
+        	</div>
+    	</div>
     	</div>
     </div>
 
+    <!--
     <div class = "slide-2 slide-feature">
     	<div class = "container">
     		<%= video_tag "berlin.mp4", :size => "1067x600", :controls => true, :autobuffer => true,  :loop => true %>
+    	</div>
+    </div> -->
+
+    <div class = "slide">
+    	<div class = "slide-2">
+    	<div class = "container">
+    		<div class = "row">
+    			<div class="col-xs-12">
+    				<%= link_to image_tag("6.png", class: "slide-2-picture"), "#"%>
+    				<p class = "text col-xs-4" >You will never be completely at home again</p>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+
+    <div class = "slide">
+    	<div class = "slide-3">
+    	<div class = "container">
+    		<div class = "row">
+    			<div class = "col-xs-12">
+    				<%= link_to image_tag("7.png", class: "slide-3-picture"), "#"%>
+    				<p class = "text col-xs-4">Because part of your heart will always be elsewhere</p>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+
+    <div class = "slide">
+    	<div class = "slide-4">
+    	<div class = "container">
+    		<div class = "row">
+    			<div class = "col-xs-12">
+    				<iframe width="1288" height="600" src="https://www.youtube.com/embed/6j8Q0O6HLQg" allowfullscreen class = "slide-4-picture"></iframe>
+    			</div>
+    		</div>
+    	</div>
     	</div>
     </div>
 
@@ -27,6 +69,8 @@
 	<%= link_to image_tag("left.png", class: "left-nav both-arrow"), "#"%> <!--Add an image with class-->
 	<ul class = "slider-dots">
 		<li class = "dot active-dot">&bull;</li> <!--Dots-->
+		<li class = "dot">&bull;</li>
+		<li class = "dot">&bull;</li>
 		<li class = "dot">&bull;</li>
 	</ul>
 	<%= link_to image_tag("right.png", class: "right-nav both-arrow"), "#" %>

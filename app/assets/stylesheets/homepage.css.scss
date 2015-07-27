@@ -3,17 +3,36 @@ body {
 	background-color: #F4F4F4;
 }
 
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-bottom: 2px solid #ddd;
+}
+
+.slider .slide  {
+  background: #F4F4F4;
+  margin-top: 1px;
+  
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+.slider .active-slide {
+  display: block; /* !Important */
+}
+
 .slider  .slide-1{
   background: image-url('9.png');
-  height: 600px; 
+  height: 600px;
   width: 1288px;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   background-size: cover;
   margin-left: -74px;
-  margin-top: -12px;
   float: left;
-  border-bottom: 2px solid #ddd;
   text-align: center;
   color: #bbbcbc;
   font-size: 15px;
@@ -27,7 +46,7 @@ body {
   width: 120px;
   height: 50px;
   margin: auto;
-  margin-top: 350px;
+  margin-top: 380px;
   text-transform: uppercase;
   opacity: 0.5;
 }
@@ -41,23 +60,50 @@ body {
     font-weight: bolder;
 }
 
-.slider .slide-1 .container-2 a:hover {
-  text-decoration: none;
+
+.slider .slide-2 .container{
+  height: 600px;
+  display: block; /* Origionally hide itself */
 }
 
-.slider .slide-2 {
+.slide-2-picture {
+  height: 600px;
+  margin-left: -85px;
+}
+
+.slide-2 .text {
   position: relative;
-  display: none;
+  margin-top: -550px;
+  font-family: Lucida Grande;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.slider .slide-2 .container {
+
+.slider .slide-3 .container{
+  height: 600px;
+  display: block;
+}
+
+.slide-3-picture {
+  height: 600px;
   float: right;
-  margin-top: -10px;
-  background-color: black;
 }
 
-.slider .active-slide {
-    display: block;
+.slide-3 .text {
+  position: relative;
+  margin-top: -288px;
+  margin-left: 750px;
+  text-align: right;
+  font-family: Lucida Grande;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.slide-4-picture {
+  margin-left: -88px;
+  border-radius: 8px;
 }
 
 /* Slider Dots and Array*/
@@ -85,6 +131,7 @@ body {
   display: inline-block;
   padding-left: 0;
   margin-bottom: 0;
+  padding-top: 4px;
 }
 
 .slider-dots li.active-dot {
@@ -103,7 +150,7 @@ body {
 .slider-nav {
   background-color: none;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 

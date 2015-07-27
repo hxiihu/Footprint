@@ -1,5 +1,6 @@
 
 /*Downpage Animation*/
+
 $(document).ready(function(){
 
 	$('.dropdown-toggle').click(function(){
@@ -13,14 +14,14 @@ $(document).ready(function(){
     var currentDot = $('.active-dot');
     var nextDot = currentDot.next();
 
-    /* Until the last slide*/
+    /* Until the last slide (empty slide) */
     if(nextSlide.length === 0) {
       nextSlide = $('.slide').first();
       nextDot = $('.dot').first();
     }
     
-    currentSlide.fadeOut(600).removeClass('active-slide');
-    nextSlide.fadeIn(600).addClass('active-slide');
+    currentSlide.fadeOut(800).removeClass('active-slide');
+    nextSlide.fadeIn(800).addClass('active-slide');
 
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
