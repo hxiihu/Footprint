@@ -48,13 +48,27 @@ $(document).ready(function(){
     });
 
     $('.viewposts').click(function(){
+        $('.popupbox').fadeOut(200).removeClass('active-popupbox');
         $('.page1').fadeOut(400).removeClass('active-page');
         $('.page2').fadeIn(800).addClass('active-page');
     });
 
     $('.linktomap').click(function(){
         $('.page2').fadeOut(200).removeClass('active-page');
-        $('.page1').fadeIn(800).addClass('.active-page');
+        $('.page1').fadeIn(800).addClass('active-page');
+    });
+
+    $('#holder_1000').click(function(){
+        $('.popupbox').slideDown(300).addClass('active-popupbox');
+    });
+
+    $('.crossicon').click(function(){
+        $('.popupbox').fadeOut(600).removeClass('active-popupbox');
+    });
+
+    $('.pagination').click(function(){
+        $('.page1').removeClass('active-page');
+        $('.page2').fadeIn(300).addClass('active-page');
     });
 
 });

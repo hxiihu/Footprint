@@ -19,6 +19,56 @@
   font-size: 18px;
 }
 
+.active-popupbox {
+  display: block;
+}
+
+.profilepage .page1 .popupbox {
+  display: none;
+  position: absolute;
+  width: 450px;
+  height: 200px;
+  background-color: #efefef;
+  border-radius: 10px;
+  margin-top: -370px;
+  margin-left: 350px;
+  border: 1px solid #C90832;
+
+  h4 {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 420px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  h5 {
+    font-family: Tahoma;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    position: absolute;
+    font-weight: normal;
+    margin-left: 400px;
+    margin-top: -10px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  p {
+    font-family: Tahoma;
+    padding-left: 10px;
+    padding-bottom: -3px;
+  }
+}
+
 .profilepage .viewposts {
   text-align: center;
   font-family: Lucida Grade;
@@ -32,6 +82,14 @@
 
 .profilepage .viewposts a {
   color: black;
+}
+
+.profilepage .page1 .jin {
+  text-align: center;
+  font-family: Lucida Grande;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 60px;
 }
 
 .profilepage #holder_1000 {
@@ -151,7 +209,7 @@
 }
 
 .profilepage .pagination {
-  margin-left: 64px;
+  margin-left: 34px;
 }
 
 /* Microposts End Here */
