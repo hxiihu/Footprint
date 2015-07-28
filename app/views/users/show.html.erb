@@ -4,20 +4,21 @@
 <div class = "container">
 
   <!-- World Map -->
-<div class = "page ">
+<div class = "page page1 active-page">
   <div>  </div>
-    <div class = "textabovemap"><p>Hey <%= @user.name %>, look at the world. Isn't it amazing?</p></div>
-    <div id="holder_1000" style="position:relative;"></div>
+    <div class = "textabovemap"><p>Hey <%= @user.name %>, look at the world. Isn't it <em>amazing</em> ?</p></div>
+    <div class = "viewposts"><a href = "#"><em>Don't you want to write something?</em></a></div>
+    <div id="holder_1000" style="position:relative;"></div> <!-- World Map -->
 </div>
 
-<div class = "page active-page">
+<div class = "page page2">
   <div class = "section-1 col-md-4">
     <div class="row">
         <div class="user_info">
           <div class = "user_info_picture">
             <%= gravatar_for @user %>
             <p><%= @user.name %></p>
-            <a href = "#" class = "linktomap">See my map!</a>
+            <div class = "linktomap"><a href = "#">(See my map!)</a></div>
           </div>
           <div class = "user_info_text"></div>
         </div>

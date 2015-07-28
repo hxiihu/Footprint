@@ -39,7 +39,7 @@ window.onload = function () {
 			// when cursor clicks
 			var flag = true;
 			st[0].onclick = function () {
-				if(confirm("Have you been to " + state + "?" )) {
+				if(confirm("Have you been to " + state + "?\nWrite something behind!" )) {
 					st.animate({fill: st.color, stroke: "#ccc"}, 300);
 					flag = false;
 				}

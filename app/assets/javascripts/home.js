@@ -40,12 +40,22 @@ $(document).ready(function(){
       prevDot = $('.dot').last();
     }
     
-    currentSlide.fadeOut(800).removeClass('active-slide');
-    prevSlide.fadeIn(800).addClass('active-slide');
+      currentSlide.fadeOut(800).removeClass('active-slide');
+      prevSlide.fadeIn(800).addClass('active-slide');
 
-    currentDot.removeClass('active-dot');
-    prevDot.addClass('active-dot');
-  });
+      currentDot.removeClass('active-dot');
+      prevDot.addClass('active-dot');
+    });
+
+    $('.viewposts').click(function(){
+        $('.page1').fadeOut(400).removeClass('active-page');
+        $('.page2').fadeIn(800).addClass('active-page');
+    });
+
+    $('.linktomap').click(function(){
+        $('.page2').fadeOut(200).removeClass('active-page');
+        $('.page1').fadeIn(800).addClass('.active-page');
+    });
 
 });
 
