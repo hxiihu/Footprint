@@ -66,7 +66,10 @@ $(document).ready(function(){
         $('.popupbox').fadeOut(600).removeClass('active-popupbox');
     });
 
-
+  //  $('.profile .pagination').click(function(){
+  //      $('.page1').removeClass('active-page');
+  //      $('.page2').fadeIn(300).addClass('active-page');
+  //  });
 
 });
 
