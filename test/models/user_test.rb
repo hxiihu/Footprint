@@ -31,18 +31,26 @@ class UserTest < ActiveSupport::TestCase
     assert_not duplicate_user.valid?
   end
 
-test "password should be present (nonblank)" do
+  test "password should be present (nonblank)" do
     @user.password = @user.password_confirmation = " " * 6
     assert_not @user.valid?
   end
 
-test "password should have a minimum length" do
+  test "password should have a minimum length" do
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
   
-test "authenticated? should return false for a user with nil digest" do
+  test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
-end
+  end
+
+  test "associated microposts should be destroyed" do
+    @user.save
+    @user.microposts.create!(content: "Oh My Lord!")
+    assert_difference 'Micropost.count', -1 do
+      @user.destroy
+    end
+  end
 
 end

@@ -14,15 +14,6 @@ User.create!(name:  "Hu Xi",
              activated: true,
              activated_at: Time.zone.now)
 
-User.create!(name:  "Zhou You",
-             email: "yollyhideout@gmai.com",
-             password:              "zhouyou",
-             password_confirmation: "zhouyou",
-             admin: true, 
-             activated: true,
-             activated_at: Time.zone.now)
-
-
 User.create!(name:  "Footprint",
              email: "yurilliam@footprint.com",
              password:              "Hangzhou",
@@ -30,3 +21,20 @@ User.create!(name:  "Footprint",
              admin: true, 
              activated: true,
              activated_at: Time.zone.now)
+
+User.create!(name:  "Zhou You",
+             email: "yollyhideout@gmail.com",
+             password:              "zhouyou",
+             password_confirmation: "zhouyou",
+             admin: true, 
+             activated: true,
+             activated_at: Time.zone.now)
+
+
+
+# Sample Microposts
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(5)
+  users.each { |user| user.microposts.create!(content: content) }
+end

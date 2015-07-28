@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   def show
     #flash[:success] = "Welcome Back!"
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page], :per_page => 17)
   end
 
   def create
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
     if @user.update_attributes(user_params)
       # Handle a successful update.
       flash[:success] = "Profile Updated"
-      redirect_to @user
+      redirect_to root_url
     else
       render 'edit'
     end
