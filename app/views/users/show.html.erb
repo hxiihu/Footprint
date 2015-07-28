@@ -3,12 +3,21 @@
 <div class = "profilepage">
 <div class = "container">
 
-  <div class = "section-1 col-md-3">
+  <!-- World Map -->
+<div class = "page ">
+  <div>  </div>
+    <div class = "textabovemap"><p>Hey <%= @user.name %>, look at the world. Isn't it amazing?</p></div>
+    <div id="holder_1000" style="position:relative;"></div>
+</div>
+
+<div class = "page active-page">
+  <div class = "section-1 col-md-4">
     <div class="row">
         <div class="user_info">
           <div class = "user_info_picture">
             <%= gravatar_for @user %>
             <p><%= @user.name %></p>
+            <a href = "#" class = "linktomap">See my map!</a>
           </div>
           <div class = "user_info_text"></div>
         </div>
@@ -30,6 +39,6 @@
       </div>
     </div>
   </div>
-
+</div>
 </div>
 </div>

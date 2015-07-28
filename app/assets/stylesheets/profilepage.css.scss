@@ -1,16 +1,31 @@
 
 /* Profile Page*/
+.profilepage .page {
+  display: none;
+}
+
+.profilepage .active-page {
+  display: block;
+}
+
+.profilepage .textabovemap {
+  text-align: center;
+  clear: both;
+}
+
 /* Microposts */
 
+.profilepage .section-1 {
+  clear: both;
+}
 
 .profilepage .user_info  {
   text-align: center;
-  margin-left: -210px;
-  margin-top: 60px;
   width: 300px;
   height: 200px;
   border: 1px solid #e8e8e8;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 57px;
 }
 
 .profilepage .user_info img {
@@ -27,7 +42,11 @@
   text-align: left;
   color: black;
   margin-top: -40px;
-  margin-left: 92px
+  margin-left: 92px;
+}
+
+.profilepage .user_info .linktomap {
+  margin-left: -30px;
 }
 
 .profilepage .user_info .user_info_picture {
@@ -42,11 +61,6 @@
   height: 100px;
   background: white;
 }
-
-.profilepage .postcontainer {
-  margin-left: -160px;
-}
-
 
 .profilepage .postcontainer .postcontainer-inside {
   border: 1px solid #e8e8e8;
