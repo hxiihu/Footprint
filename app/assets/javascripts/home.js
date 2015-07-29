@@ -84,6 +84,7 @@ $(document).ready(function(){
       $('.postbutton').fadeOut(400).removeClass('active-page');
     });
 
+    // for profile page animation
     $('.user_info').click(function(){
       $('#micropost_content').animate({
         height: "50px"
@@ -107,6 +108,11 @@ $(document).ready(function(){
     if (size_in_megabytes > 5) {
       alert('Maximum file size is 5MB. Please choose a smaller file.');
      }
+    });
+
+    //for image upload
+    $('.uploadpicture').on('click', function() {
+      $('#image-upload').click();
     });
 
   //  $('.profile .pagination').click(function(){
