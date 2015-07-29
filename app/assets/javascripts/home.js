@@ -66,10 +66,16 @@ $(document).ready(function(){
         $('.popupbox').fadeOut(600).removeClass('active-popupbox');
     });
 
+    $('#micropost_content').click(function(){
+      $('.uploadpicture').fadeIn(400).addClass('active-page');
+      $('.postbutton').fadeIn(400).addClass('active-page');
+    });
+
   //  $('.profile .pagination').click(function(){
   //      $('.page1').removeClass('active-page');
   //      $('.page2').fadeIn(300).addClass('active-page');
   //  });
+
 
 });
 

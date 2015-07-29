@@ -38,17 +38,20 @@
     <div class = "row">
       <div class = "postcontainer">
 
+      <div class = "postform">
         <!-- Add a micropost form -->
         <%= form_for(@micropost) do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
           <div class="field">
-            <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+            <%= f.text_area :content, placeholder: "What jumps into your mind..." %>
           </div>
-          <%= f.submit "Post", class: "btn btn-primary" %>
+          <div class = "uploadpicture"><%= link_to image_tag("camera.png"), "#" %></div>
+          <%= f.submit "Footprint", class: "btn btn-primary postbutton" %>
         <% end %>
+      </div>
 
         <% if @user.microposts.any? %>
-          <h3>Seeds (<%= @user.microposts.count %>)</h3>
+          <!--<h3>Seeds (<%= @user.microposts.count %>)</h3>-->
           <div class = "postcontainer-inside">
             <ol class="microposts">
               <%= render @microposts %>

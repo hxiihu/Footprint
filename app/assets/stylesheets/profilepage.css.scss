@@ -151,10 +151,37 @@
   background: white;
 }
 
+/* Micropost Form */
+
+.profilepage .postcontainer .postform  {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.profilepage .postcontainer .postform .postbutton {
+  display: none;
+  width: 89px;
+  text-align: center;
+  margin-left: 370px;
+  margin-top: -30px;
+  margin-bottom: 8px;
+  background-color: black;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.profilepage .postcontainer .postform .uploadpicture {
+  display: none;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+}
+
 .profilepage .postcontainer .postcontainer-inside {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   background-color: #fff;
+  margin-top: 20px;
 }
 
 .profilepage .postcontainer img {
