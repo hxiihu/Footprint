@@ -67,8 +67,39 @@ $(document).ready(function(){
     });
 
     $('#micropost_content').click(function(){
+      $('#micropost_content').animate({
+        height: "150px"
+      },
+        400);
       $('.uploadpicture').fadeIn(400).addClass('active-page');
       $('.postbutton').fadeIn(400).addClass('active-page');
+    });
+
+    $('.postcontainer-inside').click(function(){
+      $('#micropost_content').animate({
+        height: "50px"
+      },
+        400);
+      $('.uploadpicture').fadeOut(400).removeClass('active-page');
+      $('.postbutton').fadeOut(400).removeClass('active-page');
+    });
+
+    $('.user_info').click(function(){
+      $('#micropost_content').animate({
+        height: "50px"
+      },
+        400);
+      $('.uploadpicture').fadeOut(400).removeClass('active-page');
+      $('.postbutton').fadeOut(400).removeClass('active-page');
+    });
+
+    $('.nav').click(function(){
+      $('#micropost_content').animate({
+        height: "50px"
+      },
+        400);
+      $('.uploadpicture').fadeOut(400).removeClass('active-page');
+      $('.postbutton').fadeOut(400).removeClass('active-page');
     });
 
   //  $('.profile .pagination').click(function(){

@@ -107,7 +107,7 @@
   height: 200px;
   border: 1px solid #e8e8e8;
   border-radius: 20px;
-  margin-top: 57px;
+  margin-top: 17px;
 }
 
 .profilepage .user_info img {
@@ -152,10 +152,19 @@
 }
 
 /* Micropost Form */
-
+/*
 .profilepage .postcontainer .postform  {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
+}
+*/
+
+.profilepage .postcontainer .postform {
+  margin-top: 17px;
+}
+
+.profilepage .postcontainer .postform #micropost_content {
+  height: 50px;
 }
 
 .profilepage .postcontainer .postform .postbutton {
