@@ -101,9 +101,24 @@ body {
   text-transform: uppercase;
 }
 
+.slide-4 .text2 {
+  position: absolute;
+  margin-top: -550px;
+  font-family: cursive; /* wtf */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.slide-4 .text2-1 {
+  margin-top: -580px;
+}
+
+.slide-4 .text2-2 {
+  margin-left: 30px;
+}
+
 .slide-4-picture {
   margin-left: -88px;
-  border-radius: 8px;
 }
 
 /* Slider Dots and Array*/
