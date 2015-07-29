@@ -244,6 +244,21 @@
   margin-left: 45px;
 }
 
+.profilepage .microposts .timestamp .crossonpost {
+  display: none;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+
+.profilepage .microposts .post:hover {
+  .crossonpost {
+    display: inline-block;
+  }
+}
+
 .profilepage .pagination {
   margin-left: 34px;
 }
