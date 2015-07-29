@@ -46,12 +46,18 @@
           <div class="field">
             <%= f.text_area :content, placeholder: "What jumps into your mind..." %>
           </div>
+
           <div class = "uploadpicture"><%= link_to image_tag("camera.png"), "#" %></div>
+
           <%= f.submit "Footprint", class: "btn btn-primary postbutton" %>
+
           <!-- Picture uploader -->
           <span class="picture">
-            <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png, image/jpg, image/bmp, image/tiff, image/rif' %>
+            <!--<%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png, image/jpg, image/bmp, image/tiff, image/rif' %>-->
+            <input accept="image/jpeg,image/gif,image/png, image/jpg, image/bmp, image/tiff, image/rif" type="file" name="micropost[picture]" id="micropost_picture" />
           </span>
+          <!-- Image Uploader Ends Here -->
+
         <% end %>
       </div>
 
