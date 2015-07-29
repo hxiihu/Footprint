@@ -41,13 +41,17 @@
 
       <div class = "postform">
         <!-- Add a micropost form -->
-        <%= form_for(@micropost) do |f| %>
+        <%= form_for(@micropost, html: { multipart: true }) do |f| %>
           <%= render 'shared/error_messages', object: f.object %>
           <div class="field">
             <%= f.text_area :content, placeholder: "What jumps into your mind..." %>
           </div>
           <div class = "uploadpicture"><%= link_to image_tag("camera.png"), "#" %></div>
           <%= f.submit "Footprint", class: "btn btn-primary postbutton" %>
+          <!-- Picture uploader -->
+          <span class="picture">
+            <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png, image/jpg, image/bmp, image/tiff, image/rif' %>
+          </span>
         <% end %>
       </div>
 

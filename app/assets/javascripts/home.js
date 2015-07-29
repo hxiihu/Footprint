@@ -102,6 +102,13 @@ $(document).ready(function(){
       $('.postbutton').fadeOut(400).removeClass('active-page');
     });
 
+    $('#micropost_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('Maximum file size is 5MB. Please choose a smaller file.');
+     }
+    });
+
   //  $('.profile .pagination').click(function(){
   //      $('.page1').removeClass('active-page');
   //      $('.page2').fadeIn(300).addClass('active-page');
