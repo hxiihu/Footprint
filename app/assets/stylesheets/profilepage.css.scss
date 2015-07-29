@@ -164,7 +164,7 @@
 }
 
 .profilepage .postcontainer .postform #micropost_content {
-  height: 50px;
+  height: 60px;
 }
 
 .profilepage .postcontainer .postform .postbutton {
@@ -179,6 +179,7 @@
   font-weight: bold;
 }
 
+/* camera icon */
 .profilepage .postcontainer .postform .uploadpicture {
   display: none;
   width: 30px;
@@ -193,6 +194,7 @@
   margin-top: 20px;
 }
 
+/* img for profile picture on posts*/
 .profilepage .postcontainer img {
   border-radius: 5px;
   width: 30px;
