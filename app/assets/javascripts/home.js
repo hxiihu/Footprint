@@ -115,6 +115,18 @@ $(document).ready(function(){
       $('#image-upload').click();
     });
 
+    $(function() {
+     $("input:file").change(function (){
+       var fileName = $(this).val();
+       if (fileName.length > 0) { // detect a file has been uploaded --> file must has a name!
+        $('#uploadpicture').animate({
+          opacity: "0.8"
+        }, 
+        200);
+       }
+     });
+    });
+
   //  $('.profile .pagination').click(function(){
   //      $('.page1').removeClass('active-page');
   //      $('.page2').fadeIn(300).addClass('active-page');
