@@ -60,6 +60,14 @@ header {
 	margin-right: 2px;
 }
 
+/* Image on header */
+.nav .container .nav-right-text li img {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: -2px;
+}
+
 /* Dropdown menu */
 .nav nav .dropdown-menu {
 	display: none; /*show first*/
