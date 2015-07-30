@@ -41,6 +41,12 @@
 	.email .container a:hover {
 		text-decoration: underline;
 	}
+
+	.email .end li {
+		list-style: none;
+		font-family: times;
+		font-size: 13px;
+	}
 	</style>
 </head>
 
@@ -73,10 +79,11 @@
 		<p>Or copy and paste in your browser, <%= edit_account_activation_url(@user.activation_token, email: @user.email) %></p>
 		<p> Hope you Happy Travelling! </p>
 
+		<div class = "end">
 		<li>Lovely,</li>
-		<li></li>
 		<li>Hu Xi</li>
 		<li>Co-founder, Footprint</li>
+		</div>
 	</div>
 </div>
 </body>
