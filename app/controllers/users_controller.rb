@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   #Log in to have access
   #Profile is only accessble to user himself
-  before_action :logged_in_user, only: [:edit, :update, :show, :index, :destroy]
-  before_action :correct_user,   only: [:edit, :update, :show]
+  before_action :logged_in_user, only: [:edit, :update, :index, :destroy]
+  before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy #only Admin can delete a user
 
   def signup
@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   def index
     #@users = User.all
-    @users = User.paginate(page: params[:page])
+    @users = User.paginate(page: params[:page], :per_page => 17)
   end
 
   def show

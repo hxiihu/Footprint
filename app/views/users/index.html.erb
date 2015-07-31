@@ -3,14 +3,20 @@
 <div class = "signuppage">
 	<div class = "container">
 		<h2 class = "signuptext">All Users</h2>
+		
+		<!--
 		<p class = "textbelow"> *All users' indices. Just for infomation. Each user have only access to his/her own profile page.</p>
+		-->
 
 		<%= will_paginate %>
 		<ul class="allusers">
 			<% @users.each do |u| %>
 			<div class = "oneuser">
-				<div class = "pic"><li><%=  gravatar_for u, size: 50 %></li></div>    		
+				<div class = "pic">
+					<li><%= link_to (gravatar_for u, size: 50), u %></li>
+				</div>    		
 				<div class = "oneusername"><li><p><%=  u.name %>
+
 				<!--Delete a user, which only applies to Admin!-->
 				<% if current_user.admin? && !current_user?(u) %>
 					| <%= link_to "x", u, method: :delete, data: { confirm: "Sure?" } %>
