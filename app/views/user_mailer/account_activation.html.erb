@@ -60,24 +60,10 @@
 
 		<p>"You will never be completely at home again, because part of your heart will always be elsewhere."</p>
 
-		<p> Before your click on "Activate", there are several warm notes : </p>
-		<p>In order to provide a more user-friendly service, these are several instructions on how to change your profile picture:</p>
-		<ul class = "instruction">
-			<li>After the click on "Activate my account", go to Account/Settings</li>
-			<li>Click "change" below the defualt picture (Sorry I have no control over the default picture). </li>
-			<li>Redicted to a page called "Gravatars", which is a sub-website of WordPress.</li>
-			<li>Log in with your WordPress account. If you don't have, create one with current email address.</li>
-			<li>Click "Add email address" to add your Footprint account email address</li>
-			<li>Gravatars will send you an email to verify your email address. Click the link inside the verifying email.</li>
-			<li>You are now able to upload your profile image by clicking "Add a new image"</li>
-			<li>Follow the lateron instructions.</li>
-			<li>Congratulations! Back to and refresh your Footprint profile page</li>
-		</ul>
-		<p>I sincerely apologize for inconvenience caused. Because we don't have a huge database, we have to rely on Gravatar's service. Thanks for your understanding. Hope you enjoy the journey with Footprint!</p>
-		<p> Finally, thanks for your patience. Kindly click on the link below to activate your account:</p>
+		<p> Kindly click on the link below to activate your account:</p>
 		<%= link_to "Activate Account", edit_account_activation_url(@user.activation_token, email: @user.email) %>
 		<p>Or copy and paste in your browser, <%= edit_account_activation_url(@user.activation_token, email: @user.email) %></p>
-		<p> Hope you Happy Travelling! </p>
+
 
 		<div class = "end">
 		<li>Lovely,</li>
