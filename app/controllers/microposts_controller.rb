@@ -5,10 +5,11 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      #flash[:success] = "Micropost created!"
+      flash[:success] = "Micropost created!"
       redirect_to current_user
     else
-      render 'static_pages/home'
+      flash[:danger] = "Sorry! Word Limit: 2729 characters."
+      redirect_to  current_user #'static_pages/home'
     end
   end
 

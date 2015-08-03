@@ -23,6 +23,42 @@
   display: block;
 }
 
+.profilepage .page1 .mapbox {
+  font-weight: normal;
+  margin-left: 30px;
+  font-family: Lucida;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.profilepage .page1 .mapbox:hover {
+  text-decoration: none;
+}
+
+.profilepage .page3 .mapbox2:hover {
+  text-decoration: none;
+}
+
+.profilepage .page3 .mapbox2 {
+  background-color: #efefef;
+  position: absolute;
+  font-family: Lucida;
+  font-weight: normal;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 150px;
+  margin-left: -60px;
+}
+
+.profilepage .page3 iframe{
+  margin-top: -13px;
+  clear: both;
+  margin-left: -69px;
+}
+
 .profilepage .page1 .popupbox {
   display: none;
   position: absolute;
@@ -78,6 +114,16 @@
   font-size: 15px;
   margin-top: -20px;
   margin-left: 320px;
+}
+
+.profilepage .alter-viewposts {
+  text-align: center;
+  font-family: Lucida Grade;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: -20px;
+  margin-left: 750px;
 }
 
 .profilepage .viewposts a {

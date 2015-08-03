@@ -47,25 +47,38 @@ $(document).ready(function(){
       prevDot.addClass('active-dot');
     });
 
+    // link to map "view my map!"
+    $('.linktomap').click(function(){
+        $('.page2').fadeOut(200).removeClass('active-page');
+        $('.page1').fadeIn(800).addClass('active-page');
+    });
+
     $('.viewposts').click(function(){
         $('.popupbox').fadeOut(200).removeClass('active-popupbox');
         $('.page1').fadeOut(400).removeClass('active-page');
         $('.page2').fadeIn(800).addClass('active-page');
     });
 
-    $('.linktomap').click(function(){
-        $('.page2').fadeOut(200).removeClass('active-page');
-        $('.page1').fadeIn(800).addClass('active-page');
+    $('.alter-viewposts').click(function(){
+      $('.page1').fadeOut(100).removeClass('active-page');
+      $('.page3').fadeIn(400).addClass('active-page');
     });
 
+    $('.mapbox2').click(function(){
+      $('.page3').fadeOut(100).removeClass('active-page');
+      $('.page2').fadeIn(100).addClass('active-page');
+    });
+
+
     $('#holder_1000').click(function(){
-        $('.popupbox').slideDown(300).addClass('active-popupbox');
+    //    $('.popupbox').slideDown(300).addClass('active-popupbox');
     });
 
     $('.crossicon').click(function(){
         $('.popupbox').fadeOut(600).removeClass('active-popupbox');
     });
 
+    // microposts text window animation
     $('#micropost_content').click(function(){
       $('#micropost_content').animate({
         height: "150px"
