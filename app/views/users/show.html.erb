@@ -17,17 +17,15 @@
     <!-- Only I can see the product -->
     <% if @user.email == "williamramthy@hotmail.com" %>
     <div class = "alter-viewposts">
-      <a href = "#" class = "mapbox"><div>View my routes!</div></a>
-    </div>
-    <% elsif @user.email == "yollyhideout@gmail.com" %>
-    <div class = "alter-viewposts">
-      <a href = "#" class = "mapbox"><div>View my routes!</div></a>
+      <a href="#" class = "mapbox">View my routes!</a>
     </div>
     <% else %>
+    <% if @user == @current_user %>
     <!-- Submit map code -->
     <div class = "submit-mapcode">
       <a href = "#" class = "submit-routes">Submit my routes!</a>
     </div>
+    <% end %>
 
     <div class = "submite-map">
       <form role = "form">
@@ -36,8 +34,7 @@
           <input type="text" class="form-control inputcode" id="code" placeholder="Enter your Mapbox Code Here: ">
           <button type="submit" class="btn btn-default firstsubmit">Submit</button>
           <div class = "for-cheating">
-            <p class = "feedbackmsg">Working in process...... </p>
-            <p class = "feedbackmsg">submitted successfully. Your code is pending and waiting for Footprint's review.</p>
+            <p class = "feedbackmsg">Submitted successfully. Your code is pending and waiting for Footprint's review.</p>
             <button type="submit" class="btn btn-default okay">Okay</button>
           </div>
         </div>
