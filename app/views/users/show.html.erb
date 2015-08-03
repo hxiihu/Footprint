@@ -4,11 +4,15 @@
 <div class = "container">
 
 <!-- World Map -->
-<div class = "page page1 ">
+<div class = "page page1 active-page">
     <div class = "textabovemap"><p>Hey <%= @user.name %>, look at the world. Isn't it <em>amazing</em> ?</p></div>
     <div class = "viewposts">
       <a href = "#"><em>Don't you want to write something behind?</em></a>
     </div>
+
+    <!-- World Map -->
+    <div id="holder_1000" style="position:relative;"></div> <!-- World Map -->
+
 
     <!-- Only I can see the product -->
     <% if @user.email == "williamramthy@hotmail.com" %>
@@ -20,9 +24,21 @@
     <div class = "submit-mapcode">
       <a href = "#" class = "submit-routes">Submit my routes!</a>
     </div>
-    <% end %>
 
-    <div id="holder_1000" style="position:relative;"></div> <!-- World Map -->
+    <div class = "submite-map">
+      <form role = "form">
+        <div class="form-group">
+          <label for="code" class = "maptitlecode">Map Code:</label>
+          <input type="text" class="form-control inputcode" id="code" placeholder="Enter your Mapbox Code Here: ">
+          <button type="submit" class="btn btn-default firstsubmit">Submit</button>
+          <div class = "for-cheating">
+            <p class = "feedbackmsg">Code submitted. Working in process...... </p>
+            <button type="submit" class="btn btn-default okay">Okay</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <% end %>
 
     <div class = "popupbox">
       <h5>Hey there</h5>
@@ -42,7 +58,7 @@
 </div>
 
 <!-- Page 2 is our Main Profile -->
-<div class = "page page2 active-page">
+<div class = "page page2 ">
   <div class = "section-1 col-md-4">
     <div class="row">
         <div class="user_info">

@@ -75,7 +75,7 @@ $(document).ready(function(){
     });
 
     $('.crossicon').click(function(){
-        $('.popupbox').fadeOut(600).removeClass('active-popupbox');
+    //    $('.popupbox').fadeOut(600).removeClass('active-popupbox');
     });
 
     // microposts text window animation
@@ -140,6 +140,21 @@ $(document).ready(function(){
      });
     });
 
+    $('.submit-routes').click(function(){
+      $('.submite-map').fadeIn(200).addClass('active-slide');
+    });
+
+    $('.firstsubmit').click(function(){
+      $('.maptitlecode').fadeOut(200).addClass('inactive');
+      $('.inputcode').fadeOut(200).addClass('inactive');
+      $('.firstsubmit').fadeOut(200).addClass('inactive');
+      $('.feedbackmsg').fadeIn(200).addClass('active-page');
+      $('.okay').fadeIn(200).addClass('active-page');
+    });
+
+    $('.okay').click(function(){
+      $('.submite-map').fadeOut(200).addClass('inactive');
+    });
   //  $('.profile .pagination').click(function(){
   //      $('.page1').removeClass('active-page');
   //      $('.page2').fadeIn(300).addClass('active-page');
