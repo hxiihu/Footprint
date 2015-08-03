@@ -9,9 +9,19 @@
     <div class = "viewposts">
       <a href = "#"><em>Don't you want to write something behind?</em></a>
     </div>
+
+    <!-- Only I can see the product -->
+    <% if @user.email == "williamramthy@hotmail.com" %>
     <div class = "alter-viewposts">
       <a href = "#" class = "mapbox">View my routes!</a>
     </div>
+    <% else %>
+    <!-- Submit map code -->
+    <div class = "submit-mapcode">
+      <a href = "#" class = "submit-routes">Submit my routes!</a>
+    </div>
+    <% end %>
+
     <div id="holder_1000" style="position:relative;"></div> <!-- World Map -->
 
     <div class = "popupbox">

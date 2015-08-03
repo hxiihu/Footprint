@@ -39,7 +39,7 @@ window.onload = function () {
 			var flag = true;
 			st[0].onclick = function () {
 				// for futhur development
-				prompt("Have you been to " + state + "?\nWrite something behind!");
+			//	prompt("Have you been to " + state + "?\nWrite something behind!");
 			};
 
 			// when cursor is away

@@ -71,7 +71,7 @@ $(document).ready(function(){
 
 
     $('#holder_1000').click(function(){
-    //    $('.popupbox').slideDown(300).addClass('active-popupbox');
+        $('.popupbox').slideDown(300).addClass('active-popupbox');
     });
 
     $('.crossicon').click(function(){

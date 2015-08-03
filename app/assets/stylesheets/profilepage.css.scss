@@ -32,7 +32,20 @@
   border-radius: 5px;
 }
 
+.profilepage .page1 .submit-routes {
+  font-weight: normal;
+  margin-left: 920px;
+  font-family: Lucida;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .profilepage .page1 .mapbox:hover {
+  text-decoration: none;
+}
+
+.profilepage .page1 .submit-routes:hover {
   text-decoration: none;
 }
 
